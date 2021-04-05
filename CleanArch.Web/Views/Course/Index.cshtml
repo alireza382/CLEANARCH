@@ -1,0 +1,20 @@
+﻿@model ClaenArch.Application.ViewModels.CourseViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<ul>
+    @foreach (var course in Model.Courses)
+    {
+
+        <li>
+            @course.Name   ---------   @course.Description
+
+        </li>
+
+
+    }
+
+</ul>
